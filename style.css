@@ -1,0 +1,668 @@
+body{ font-family: sans-serif;
+
+
+}
+
+body a{
+
+}
+
+/*---------------------------------------------HOMEPAGE--------------------------------------------*/
+
+
+/*----------------------Header--------------------------------*/
+#divheader_homepage{
+	background-color: rgba(0, 114, 186, 0.95);
+	height: 108px;
+	margin-left: 0px;
+	position: relative;
+	right: 0px;
+	top: 0px;
+	left: 0px;
+	
+}
+
+div#divheader_homepage a{
+	text-decoration: none;
+}
+
+#motto{
+	color: white;
+	font-family: cursive;
+	margin-left: 70px;
+
+}
+
+
+.img_logoHome{
+	height: 100px;
+	width: 100px;
+	border-radius: 90px;
+	margin-left: 60px;
+	margin-top: 2px;
+	
+}
+
+.h1_hvt{
+	font-family: cursive; 
+	color: white; 
+	margin-left: 200px; 
+	margin-top: -75px;
+}
+
+.divnavmenu{
+
+	margin-left: 520px;
+	margin-top: -95px;
+	font-size: medium;
+}
+
+/*--------Rules for Navigation menu---------------*/
+ul.navmenu, ul.pands, ul.hvtAcad{
+	list-style-type: none;
+	margin: 0px;
+	padding: 2px;
+}
+
+ul.navmenu li{
+	
+	float: left;
+	position: relative;
+	width: 140px;
+	text-align: center;
+	margin-right: 4px;
+	margin-top: 5px;
+}
+
+ul.navmenu a{
+	text-decoration: none;
+	display: block;
+	line-height: 25px;
+	height: 25px;
+	border-radius: 5px;
+	border-width: 2px;
+	border-color: rgba(0, 114, 186);
+	color: white;
+}
+
+ul.navmenu li:hover > a{
+	background-color: rgba(55, 130, 187, 0.5);
+	color: white;
+}
+
+
+ul.navmenu li:hover a:hover {
+	background-color:white;
+	color: rgba(0, 114, 186, 1.0);
+}
+
+
+
+ul.navmenu ul.pands{
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	display: none;
+}
+
+ul.navmenu li:hover .pands{
+	display: block;
+}
+
+ul.navmenu ul.hvtAcad{
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	display: none;
+}
+
+ul.navmenu li:hover .hvtAcad{
+	display: block;
+}
+
+.nav-portals{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	left: 126px;
+	display: none;
+}
+
+.nav-portals li:hover{
+	display: block;
+	left: 126px;
+}
+
+/*========Social Media Buttons--------*/
+ .social-icons{
+ 	margin-left: 1250px;
+ 	margin-top: 54px;
+ 	width: 200px;
+ 	height: 50px;
+
+ }
+
+ .fa{
+ 	text-decoration: none;
+ 	padding: 15px;
+ }
+
+.fa:hover{
+	opacity: 1.0;
+	background-color: rgb(201, 51, 51);
+}
+
+.fa-facebook{
+	color: white;
+}
+
+.fa-instagram{
+	color: white;
+}
+
+.fa-twitter{
+	color: white;
+}
+
+.fa-youtube{
+	color: white;
+}
+
+
+/*-----------------------------End Header-----------------------*/
+ .home-slideshow{
+ 	animation: alternate;
+ 	animation-name: welcome;
+ 	animation-duration: 30s;
+ 	animation-direction: normal;
+ 	text-anchor: middle;
+ 
+ 	animation-iteration-count: infinite;
+ 	height: 500px;
+ 	margin-left: 50px;
+ 	margin-right: 50px;
+ 	margin-top: 70px;
+ 	margin-bottom: 70px;
+ 	box-shadow: 2px;
+ 
+ 	
+ }
+
+ @keyframes welcome{
+ 	from {
+ 		background-image: url(images/chip.jpg);
+ 		background-repeat: repeat-y;
+ 		background-position: center;
+ 		background-size: cover;
+ 		
+ 	}
+ 	to{
+ 		background-image: url(images/hvt.jpg);
+ 		background-repeat: repeat-x;
+ 		background-position: center;
+ 		
+ 		
+ 	}
+ 	
+ }
+/*-----Homepage Footer------*/
+
+
+.homefooter{
+	background-color: rgba(0, 114, 186, 0.95);
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+	height: 200px;
+	padding: 60px;
+	display: block;
+}
+
+.homefooter a{
+	text-decoration: none;
+	color: white;
+}
+.aboutfooter{
+	width: 200px;
+	height: 200px;
+	margin-left: 70px;
+	padding: 20px;
+	margin-top: -65px;
+	font-size: medium;
+	text-align: center;
+}
+
+/* From uiverse.io */
+button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+button.learn-more {
+ width: 12rem;
+ height: auto;
+}
+
+button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: rgba(255,255,255, 0.3);
+ border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: white;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+button:hover .circle {
+	color: rgba(255,255,255, 0.3);
+ width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+ background: rgba(255,255,255, 0.3);
+ transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+ color: #fff;
+}
+
+.nav-footer-HvtAcad{
+	margin-left: 350px;
+	height: 150px;
+	margin-top: -220px;
+	text-align: center;
+	
+	width: 200px;
+	
+}
+
+.hvtAcad-footer{
+	color: white;
+
+}
+
+.nav-footer-HvtAcad ul{
+	list-style-type: none;
+	font-size: medium;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 3px;
+
+}
+
+.nav-footer-HvtAcad h3{
+	text-align: center;
+}
+
+.nav-footer-HvtAcad li{
+	padding: 3px;
+	color: white;
+}
+
+
+.hvtAcad-footer li:hover{
+	color: rgba(0, 114, 186, 1.0);
+	background-color: rgba(255, 255, 255, 0.3);
+	display: block;
+	border-radius: 5px;
+	align-content: center;
+}
+
+
+.nav-footer-PandS{
+	width: 200px;
+	height: 180px;
+	margin-left: 600px;
+	padding: 20px;
+	margin-bottom: inherit;
+	font-size: medium;
+	text-align: center;
+	margin-top: -190px;
+}
+
+
+.nav-footer-PandS ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+.nav-footer-PandS li{
+	padding-top: 5px;
+}
+
+.newsletter{
+	margin-left: 800px;
+	margin-top: -190px;
+}
+
+.newsletter label{
+	margin-left: -160px;
+}
+.email-field{
+	border: none;
+	height: 50px;
+	border-radius: 5px;
+	width: 300px;
+	text-align: center;
+	  box-sizing: border-box;
+	  color: rgba(201, 51, 51, 1.0);
+}
+
+
+
+/* From uiverse.io */
+.subscribebutton {
+ display: inline-block;
+ padding: 12px 24px;
+ border-radius: 4px;
+ transition: all 0.2s ease-in;
+ position: relative;
+ overflow: hidden;
+ font-size: 19px;
+ color: white;
+ z-index: 1;
+}
+
+.subscribebutton:before {
+ content: "";
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%) scaleY(1) scaleX(1.25);
+ top: 100%;
+ width: 140%;
+ height: 180%;
+ background-color: white;
+ border-radius: 50%;
+ display: block;
+ transition: all 0.5s 0.1s cubic-bezier(0, 114, 186, 1.0);
+ z-index: -1;
+}
+
+.subscribebutton:after {
+ content: "";
+ position: absolute;
+ left: 55%;
+ transform: translateX(-50%) scaleY(1) scaleX(1.45);
+ top: 180%;
+ width: 160%;
+ height: 190%;
+ background-color: #39bda7;
+ border-radius: 50%;
+ display: block;
+ transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+ z-index: -1;
+}
+
+.subscribebutton:hover {
+ color: #ffffff;
+ border: 1px solid #39bda7;
+}
+
+.subscribebutton:hover:before {
+ top: -35%;
+ background-color: rgba(255, 255, 255, 0.3);
+ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.subscribebutton:hover:after {
+ top: -45%;
+ background-color: rgba(255, 255, 255, 0.2);
+ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/*-------ContactUs-footer-----*/
+.ContactUs-footer{
+	
+	width: 20%;
+	margin-left: 900px;
+	margin-top: 0px;
+	height: 200px;
+}
+
+/*=====footer-social-icons=========*/
+.footer-social-icons{
+	width: 120px;
+	margin-left: 1230px;
+	margin-top: -130px;
+	height: 100px;
+	padding: 10px;
+}
+
+.footer-social-icons .fa{
+	height: 20px;
+	width: 20px;
+	border-radius: 90px;
+}
+
+.footer-social-icons .fa:hover{
+	opacity: 0.7;
+}
+
+.footer-social-icons .fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 10px;
+}
+
+.footer-social-icons  .fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 10px;
+}
+
+.footer-social-icons .fa-youtube {
+  background: #bb0000;
+  color: white;
+  padding: 10px;
+}
+
+.footer-social-icons .fa-instagram {
+  background: #125688;
+  color: white;
+  padding: 10px;
+}
+/*-----copyright*---/*/
+	.copyright{
+	text-decoration: none;
+	color: white;
+	position: relative;
+}
+
+.copyright a:hover{
+	opacity: 0.7;
+
+}
+
+/*==================End Footer Homepage=================
+
+
+/*======================================================STUDENTS LOGIN PAGE==============================================*/
+
+.body_loginpage {
+	background-image: url(images/b4.jpg);
+	background-position: center;
+	background-repeat: none;
+	background-size: cover;
+}
+
+.imglogologin{
+	width: 120px;
+	height: 120px;
+	margin-left: 142px;
+	margin-top: -10%;
+	border-radius: 90px;
+}
+
+.divLoginpage{
+	background-color: rgba(255,255,255, 0.4);
+	width: 425px;
+	height: 550px;
+	border-radius: 4.5%;
+	margin-left: 450px;
+	margin-top: 180px
+}
+
+.h1_loginpage{
+	font-family: calibri;
+		padding-left: 80px;
+		padding-top: 55px;
+		text-transform: capitalize;
+}
+
+#input_email{
+	border-radius: 30px;
+	width: 370px;
+	height: 28px;
+	margin-left: 20px;
+	padding-left: 15px;
+	margin-top: 15px;
+	border-color: rgba(44, 131, 197, 0.85);
+	border-style: double;
+	border-width: 1px;
+
+}
+
+#input_password{
+	border-radius: 30px;
+	width: 370px;
+	height: 28px;
+	margin-left: 20px;
+	margin-top: 25px;
+	padding-left: 15px;
+	border-color: rgba(44, 131, 197, 0.85);
+	border-style: double;
+	border-width: 1px;
+
+}
+
+#login_button{
+	width: 390px;
+	border-radius: 30px;
+	margin-left: 20px;
+	height: 35px;
+	font-family: calibri;
+	margin-top: 25px;
+	background-color: rgba(44, 131, 197, 0.85);
+	color: white;
+
+
+}
+
+#login_button:hover{
+	background-color: white;
+	width: 390px;
+	border-radius: 30px;
+	margin-left: 20px;
+	height: 35px;
+	font-family: calibri;
+	margin-top: 25px;
+
+}
+
+.p_loginpage{
+	padding-left: 20px;
+	margin-top: 25px;
+	
+
+}
+
+.a_loginpage{
+	text-decoration: none;
+	color:  rgba(44, 131, 197, 0.95); 
+}
+
+.login2home{
+	width:50px;
+	color: white;
+	background-color: rgba(44, 131, 197, 0.8);
+	border-radius: 5px;
+	font-family: verdana;
+	border-width: 1px;
+	border: none;
+	margin-left: 20px;
+	margin-top: 0px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+
+}
+.login2home:hover{
+	width: 50px;
+	color: rgba(44, 131, 197, 0.8);
+	background-color: white;
+	border-radius: 5px;
+	font-family: calibri;
+	border-width: 1px;
+	border: none;
+	margin-left: 10px;
+}
+
+.hr_loginpage{
+	margin-top: 50px;
+}
+
+#fbG{
+
+}
