@@ -1,127 +1,180 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Havillah Technologies</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel = "icon" href ="images/hvt.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/8385e6f61d.js" crossorigin="anonymous"></script>
-</head>
+    <title>NYSC login Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="..." crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="nysclogin.css">
+    <style>
+      /* Basic styling adjustments to work better with Bootstrap */
+      .NYSCLOGO img {
+        max-width: 100px; /* Adjust as needed */
+        height: auto;
+      }
+      .imglogin, .imgver, .imgpayment, .imgmain, .imggraduate, .imgremita, .imgcalendar, .imgfaq {
+        max-width: 100%; /* Make images responsive */
+        height: auto;
+        display: block; /* Prevent image from affecting text flow */
+        margin: 0 auto; /* Center images */
+      }
 
-<body>
-    <!-- Header -->
-    <header>
-        <div id="divheader_homepage">
-            <a href="index.html"><img src="images/hvt.jpg" class="img_logoHome"></a>
-            <a href="index.html"><h3 class="h1_hvt">HAVILLAH TECHNOLOGIES</h3></a>
-             <br>
-    <div class="divnavmenu">     
-            <ul class="navmenu">
-            <li><a href="index.html"><i class="fa-solid fa-building-columns"></i> Home</a></li>
-                <li> <a href=""><i class="fa-solid fa-user-gear"></i> Services</a>
-                    <ul class="pands">
-                        <li><a href=""><i class="fa-solid fa-mobile-screen"></i> Phone</a></li>
-                        <li><a href=""><i class="fa-solid fa-computer"></i> Computer</a></li>
-                        <li><a href=""><i class="fa-solid fa-microchip"></i> Others</a></li>
-                    </ul>
-                </li>
-            <li><a href=""><i class="fa-solid fa-graduation-cap"></i> HVT Academy</a>
-                <ul class="hvtAcad">
-                    <li><a href="" target="_blank"><span class="fa-solid fa-users"></span> Portals</a></li>
-                        <ul class="nav-portals">
-                            <li><a href="Student Login portal.html" target="_blank">Students Portal</a></li>
-                            <li><a href="Student Login portal.html" target="_blank"><i class="fa-solid fa-book-copy"></i> Registration Portal</a></li>
-                        </ul>
-                        <li> <a href=""><i class="fa-solid fa-book-copy"></i> Our Courses</a></li>
-                    
-                </ul>
-            </li>
-            <li><a href=""><i class="fa-solid fa-address-card"></i> Contact Us</a></li>
-            <li><a href=""><i class="fa-solid fa-quote-right"></i> About Us</a></li>
+      .divlogin, .divremobilization, .divverifycert, .divpayment, .divmainsite, .divpcm, .divguideonpay, .divdateofbirth, .divfaq {
+        padding: 20px; /* Add some padding around sections */
+        margin-bottom: 20px; /* Add spacing between sections */
+        border: 1px solid #eee; /* Add a subtle border */
+        border-radius: 5px; /* Add rounded corners */
+      }
+      .divfooter {
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f9fa; /* Light gray background for footer */
+      }
+      .header {
+        padding: 20px;
+      }
+      .navigation {
+        display: flex;
+        justify-content: center; /* Center the navigation links */
+      }
+      .navigation a {
+        margin: 0 10px; /* Add spacing between links */
+      }
+      .welcome {
+        text-align: center;
+        margin-bottom: 20px; /* Space below the welcome message */
+      }
+      .ghead, .foreignsite, .guildesite, .dobsite, .faqsite {
+        text-align: center;
+      }
+      .hr1, .hrinfo, .hrforeign, .hrguide, .hrfaqs {
+        margin: 20px auto; /* Center the hr elements */
+        max-width: 80%;
+      }
 
-            </ul>
-            </div>
-                <div class="social-icons">
-             <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-    </div>
+      /* Responsive adjustments */
+      @media (min-width: 768px) {
+        .navigation {
+          justify-content: flex-end; /* Align navigation to the right on larger screens */
+        }
+        .navigation a {
+          margin: 0 15px;
+        }
+        .divlogin, .divremobilization, .divverifycert, .divpayment, .divmainsite, .divpcm, .divguideonpay, .divdateofbirth, .divfaq {
+          display: flex;
+          align-items: center; /* Vertically center content */
+        }
+        .divlogin > *, .divremobilization > *, .divverifycert > *, .divpayment > *, .divmainsite > *, .divpcm > *, .divguideonpay > *, .divdateofbirth > *, .divfaq > * {
+          flex: 1; /* Equal width for elements within the divs */
+          padding: 10px;
+        }
+        .divlogin img, .divremobilization p, .divverifycert img, .divpayment img, .divmainsite img, .divpcm img, .divguideonpay img, .divdateofbirth img, .divfaq img {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 NYSCLOGO">
+            <img src="images/nysclogo.jpeg" alt="NYSC Logo">
+          </div>
+          <div class="col-md-6 NYSC text-center">
+            <h3>NATIONAL YOUTH SERVICE CORPS</h3>
+            <h4 class="motto">*SERVICE AND HUMILITY*</h4>
+          </div>
+          <div class="col-md-3 navigation">
+            <a href="" class="homebutton btn btn-link">Home</a>
+            <a href="" class="paymentbutton btn btn-link">Payment Status</a>
+            <a href="" class="contactbutton btn btn-link">Contact Us</a>
+          </div>
         </div>
+      </div>
+      <div class="welcome">
+        <h1 class="h1welcome">Welcome to the NYSC Portal</h1>
+      </div>
+      <hr class="hr1">
+    </header>
 
-   
-</header>
-<!-- -------------------------------------------End of header ------------------------------------>
+    <div class="container">
+      <div class="registration">
+        <p>No Active Registration</p>
+      </div>
 
-<!------------------------------------------- Section-------------------------------------------------------->
+      <div class="row">
+        <div class="col-md-4 divlogin">
+          <a href="#" class="aLogin">Login Here</a><br>
+          <img src="images/login.png" class="imglogin" alt="Login">
+        </div>
+        <div class="col-md-4 divremobilization">
+          <h2 class="newRem">New: Online Application for Remobilization!!</h2>
+          <p class="prem"><a href="" class="aRemobilization">Click here to Apply for Remobilization</a></p>
+        </div>
+        <div class="col-md-4 divverifycert">
+          <img src="images/verification.png" class="imgver" alt="Verification"><br>
+          <button class="certbutton btn btn-primary">Verify Certificate</button><br>
+          <p class="disEE">Discharge Exclusion and Exemption</p>
+        </div>
+      </div>
 
-<div class="home-slideshow">
+      <div class="row">
+        <div class="col-md-4 divpayment">
+          <img src="images/paymentstatus.png" class="imgpayment" alt="Payment Status"><br>
+          <button class="paybutton btn btn-primary">Payment Status</button><br>
+          <p class="tocheck">To check your Payment Status</p>
+        </div>
+        <div class="col-md-4 divmainsite">
+          <img src="images/mainsite.png" class="imgmain" alt="Main Site"><br>
+          <button class="sitebutton btn btn-primary">Visit the Main Site</button><br>
+          <p class="visitsite">Visit NYSC website for information and updates</p>
+        </div>
+      </div>
 
-    
-</div>
 
+      <h1 class="ghead">Guidelines</h1>
+      <hr class="hrinfo">
 
-<!-- Footer -->
-<footer class="homefooter">
-     
-    <div class="aboutfooter">
-        <h3>About Havillah Techs</h3> 
-        <p>We Provide swift and satisfying ICT services to our esteem clients. We also supply durable and affordable ICT products.</p>
+      <div class="row">
+        <div class="col-md-4 divpcm">
+          <h3 class="foreignsite"><b>Foreign P.C.M Requirements</b></h3>
+          <hr class="hrforeign">
+          <img src="images/foreign-graduates.png" class="imggraduate" alt="Foreign Graduates">
+        </div>
+        <div class="col-md-4 divguideonpay">
+          <h3 class="guildesite"><b>Guidelines on Payment</b></h3>
+          <hr class="hrguide">
+          <img src="images/remitapayment.png" class="imgremita" alt="Remita Payment">
+        </div>
+        <div class="col-md-4 divdateofbirth">
+          <h3 class="dobsite"><b>Change of Date of Birth</b></h3>
+          <hr class="hrguide">
+          <img src="images/calendar.png" class="imgcalendar" alt="Calendar">
+        </div>
+        <div class="col-md-4 divfaq">
+          <h3 class="faqsite"><b>F.A.Qs</b></h3>
+          <hr class="hrfaqs">
+          <img src="images/faq.png" class="imgfaq" alt="FAQ">
+        </div>
+      </div>
 
-<button class="learn-more">
-  <span class="circle" aria-hidden="true">
-  <span class="icon arrow"></span>
-  </span>
-  <span class="button-text">Learn More</span>
-</button>
-  
-    </div>
+      <h1 class="ghead">Important Information</h1>
+      <hr class="hrinfo">
 
-    <div class="nav-footer-HvtAcad">
-        <h3>HVT Academy</h3>
-        <ul class="hvtAcad-footer">
-            <li><a href="login.html" target="_blank"><span class="fa-solid fa-users"></span> Students Portal</a></li>
-            <li><a href="" target="_blank"><i class="fa-solid fa-pen-to-square"></i> Registration Portal</a></li>
-            <li><a href="" target="_blank"><span class="fa-solid fa-diploma"></span> Our Courses</a></li>
-        </ul>
-        
-    </div>
+      <div class="gradlist">
+        <a href="" class="alist">Check Senate List of its equivalents</a><br><br>
+        <a href="" class="alist">View Graduation List</a>
+      </div>
 
-    <div class="nav-footer-PandS">
-        <h3>Products and Services</h3>
-        <ul class="hvtAcad-footer">
-            <li><a href="login.html" target="_blank"><i class="fa-solid fa-mobile-screen"></i> Phone</a></li>
-            <li><a href="" target="_blank"><i class="fa-solid fa-computer"></i> Computer</a></li>
-            <li><a href="" target="_blank"><i class="fa-solid fa-microchip"></i> Others</a></li>
-        </ul>
-        
-    </div>
+      <div class="biometrics">
+        <a href="" class="alist">Biometrics Instructions</a>
+      </div>
 
-    <div class="newsletter">
-        <strong><label>Subscribe to our Newsletter</label></strong> <br>
-        <input type="email" name="" placeholder="Input Your Email To Receive Our Latest Updates" class="email-field">
-        <button class="subscribebutton">Subscribe</button>
-    </div>
-    <div class="ContactUs-footer">
-        <h4 align="center">Contact Us</h4>
-        <p><i class="fa-solid fa-location-dot"></i></i> No.50 Goodness Street, lamodi area, Offa Kwara State, Nigeria.</p>
-        <p><i class="fa-solid fa-phone"></i> +2349053623488</p>
-        <p><i class="fa-solid fa-envelope"></i>Havitech247@gmail.com</p>
+      <div class="accred">
+        <a href="" class="alist">Accredited Institutions/Programmes</a>
+      </div>
 
-        
-    </div>
-    <div class="footer-social-icons">
-             <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-    </div>
-    <div class="copyright">
-        <small>Copyrights&copy; |<a href="index.html">HaviTech 2022.</a> All Rights Reserved</small>
-    </div>
-</footer>
-</body>
-
-</html>
+      <div class="divfooter">
+        <footer>
+          <small>Powered by HAVITECH</small><br><br>
